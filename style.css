@@ -1,33 +1,62 @@
 @import "reset.css";
-
 body{
-    background-color: #f6f9fc;
+    background-color: antiquewhite;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top:30px;
+    padding-top: 10px;
 }
+
 .canvas{
     width: 700px;
     height: 600px;
-    background-color:white;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-
-
 }
+
+
 .controls{
-    margin-top: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.controls .controls__bts{
+    margin-bottom: 10px;
+}
+.controls__bts button{
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    all:unset;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    padding:5px 10px;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.08);
     
+    font-weight: 500;
 }
 
-.control_colors .control_colors{
-    display:inline-flex;
-   
+.controls__bts button:active{
+   transform: scale(0.87);
+
+}
+.controls .controls__colors{ /*한칸 뛰어야 한다) */
+    display:flex;
+}
+
+.controls__colors .controls__color{
     width: 50px;
     height: 50px;
-    border-radius: 25px;
+    cursor: pointer;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+}
+.controls .controls__range{
+    margin-bottom: 5px;
+    
 
 }
