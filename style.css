@@ -19,8 +19,8 @@ body{
 
 .controls{
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+    display: flex; /*기본값 : row */
+    flex-direction: column;/*column -> 세로로 */
     align-items: center;
 
 }
@@ -29,8 +29,8 @@ body{
 }
 .controls__bts button{
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-    all:unset;
-    cursor: pointer;
+    all:unset; /*버튼에 대해서만*/
+    cursor: pointer; /*마우스 커서->pointer*/
     background-color: white;
     text-align: center;
     padding:5px 10px;
@@ -41,7 +41,7 @@ body{
 }
 
 .controls__bts button:active{
-   transform: scale(0.87);
+   transform: scale(0.87); /*마우스를 누를때 원래크기의 0.87%만큼 바뀐다*/
 
 }
 .controls .controls__colors{ /*한칸 뛰어야 한다) */
