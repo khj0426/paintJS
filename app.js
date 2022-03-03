@@ -5,6 +5,10 @@ const canvas = document.getElementById('jsCanvas'); /*getElementByid() -> id가 
 var ctx = canvas.getContext('2d');  /*https://yougome.tistory.com/206*/
 /*canvas ->context*/
 
+const colors = document.getElementsByClassName("jsColor");
+
+canvas.width = 700;
+canvas.height = 600;
 ctx.strokeStyle = 'black';
 
 ctx.lineWidth = 2.5;
@@ -58,3 +62,7 @@ canvas.addEventListener("mousedown",startPainting);
 canvas.addEventListener("mouseup",onMouseup);
 canvas.addEventListener("mouseleave",onMouseleave);
 }
+
+Array.from(colors).forEach(colors)
+
+
